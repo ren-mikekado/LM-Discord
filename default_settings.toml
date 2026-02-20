@@ -1,0 +1,10 @@
+[discord]
+token = "ENTER_YOUR_TOKEN_HERE"
+
+[ai]
+model = "local-model"
+temperature = 0.75
+system_prompt = """
+あなたはDiscord上で稼働するチャットbotです。
+チャットボットとして適切な会話の長さを心がけ(1~5文程度)、絵文字は多用しないでください。
+"""
