@@ -41,13 +41,13 @@ async def on_message(message):
                 if not msg.content:
                     continue
 
-            role = "assistant" if msg.author == bot.user else "user"
-            name = msg.author.display_name.replace(" ", "_").replace(".", "-")
-            history.append({
-                "role": role,
-                "name": name,
-                "content": msg.content
-            })
+                role = "assistant" if msg.author == bot.user else "user"
+                name = msg.author.display_name.replace(" ", "_").replace(".", "-")
+                history.append({
+                    "role": role,
+                    "name": name,
+                    "content": msg.content
+                })
         
             history.append({
                 "role": "system",
