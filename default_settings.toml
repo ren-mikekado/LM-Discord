@@ -1,7 +1,5 @@
-[discord]
 token = "ENTER_YOUR_TOKEN_HERE"
 
-[ai]
 model = "local-model"
 temperature = 0.75
 system_prompt = """

@@ -48,13 +48,15 @@ async def on_message(message):
                     "name": name,
                     "content": msg.content
                 })
-        
+            
+            # reverseするのでシステムプロンプトを先頭に
             history.append({
                 "role": "system",
                 "name": "System-prompt",
                 "content": system_prompt
             })
 
+            # チャット履歴取得は昇順なので降順に直す
             history.reverse()
 
             print(history)
